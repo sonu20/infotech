@@ -97,7 +97,7 @@ main {
 .form-container {
     background: rgba(102, 126, 234, 0.1);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 2rem 0;
     border: 1px solid rgba(102, 126, 234, 0.2);
 }
