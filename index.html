@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Web Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Web Application</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section active">
+            <h2>Home Section</h2>
+            <p>This is a simple web application demonstrating HTML, CSS, JavaScript, and PHP integration.</p>
+            
+            <div class="form-container">
+                <h3>User Registration Form</h3>
+                <form id="userForm" action="process.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Submit</button>
+                </form>
+            </div>
+
+            <div class="interactive-section">
+                <h3>Interactive Features</h3>
+                <button id="colorBtn" class="btn-secondary">Change Background Color</button>
+                <button id="timeBtn" class="btn-secondary">Show Current Time</button>
+                <div id="timeDisplay"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Section</h2>
+            <p>This web application showcases:</p>
+            <ul>
+                <li>HTML5 semantic structure</li>
+                <li>CSS3 styling and animations</li>
+                <li>JavaScript interactivity</li>
+                <li>PHP server-side processing</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Section</h2>
+            <p>Get in touch with us through the form above or visit our social media pages.</p>
+            <div class="contact-info">
+                <p><strong>Email:</strong> info@example.com</p>
+                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Simple Web Application. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
